@@ -31,3 +31,26 @@ const myFunction = function () {
 console.log(typeof score);
 console.log(typeof outSideTemp);
 console.log(typeof myFunction);
+
+// ==================================
+// STACK (PRIMITIVE) => kise variable ka copy milta h  pr
+// HEAP (NON-PRIMITIVE) => or esmey original value milta h referance milta h
+
+let myVariable = "variable Name";
+let anotherVariable = myVariable;
+anotherVariable = "Chaiaurcode";
+console.log(anotherVariable);
+
+console.log(myVariable);
+
+let userOne = {
+  email: "shoaibiifa4432@gmail.com",
+  upi: "user@ybl",
+};
+
+let userTwo = userOne;
+
+userTwo.email = "blacksmith@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
