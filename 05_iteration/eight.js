@@ -17,7 +17,7 @@ const shoppongCart = [
   },
   {
     itemName: "py course",
-    price: 2000,
+    price: 299,
   },
   {
     itemName: "mobile dev course",
