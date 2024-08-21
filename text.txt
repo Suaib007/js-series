@@ -1,1 +1,41 @@
 console.log("Hello Mr.Black");
+
+Test
+
+<!--     JavaScript Execution context     -->
+
+[{}]=> this box represent javascript code
+
+{} => Global execution context
+
+      1.Global execution context
+      2.Function execution context
+      3.Eval execution context
+
+
+      {} => Memory Creation Phase
+      {} => Execution Phase
+
+
+      let val1 = 10 => Global Execution (this)
+      let val2 = 5  => Global Execution (this)
+
+
+      function addNum(num1, num1){  => Memory Creation Phase
+      let total = num1 + num2       -> 1. val1 => Undefined
+      return total                  -> 2.val2 => Undefined
+      }                         -> 3. addNum => Defination
+
+      let result1 = addNum(val1, val2) ->result1 =>Undefined
+      let result2 = addNum(10, 4)      ->result2 =>Undefined
+
+====>3. Execution Phase
+val1 <--- 10
+val2 <--- 5
+addNum-----> [new variable environment + Execution thread] //Baad m delete ho jata h
+
+addNum se execute hogey y step
+Memory Phase------------------Execution Phase
+val1-->Undefined-----------num1-->10
+val2-->Undefined-----------num2-->5
+total-->Undefined----------result1-->15 & result2-->14
